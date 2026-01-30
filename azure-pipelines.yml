@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: batch-28
+pool: ad-agent-pool
 
 steps:
 
