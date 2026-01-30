@@ -52,7 +52,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'batch-27-AzureDevOps-Azure'
+    azureSubscription: 'AD-AzureDevOps-Azure'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob upload-batch --account-name batch25storageaccount123 --destination artifactcontainer --source $(Build.ArtifactStagingDirectory) --pattern **.war'
