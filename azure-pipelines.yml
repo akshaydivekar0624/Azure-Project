@@ -55,5 +55,5 @@ steps:
     azureSubscription: 'AD-AzureDevOps-Azure'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob upload-batch --account-name AD-AzureDevOps-Azure --destination container-1 --source $(Build.ArtifactStagingDirectory) --pattern **.war'
+    inlineScript: 'az storage blob upload-batch --account-name adstorageaccount123 --destination container-1 --source $(Build.ArtifactStagingDirectory) --pattern **.war'
 
