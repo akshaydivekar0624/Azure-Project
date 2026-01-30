@@ -43,8 +43,8 @@ steps:
 - task: S3Upload@1
   inputs:
     awsCredentials: 'AD-AzureDevOps-AWS'
-    regionName: 'ap-south-1'
-    bucketName: 'aws-s3-bucket-ygminds-batch-28'
+    regionName: 'us-east-1'
+    bucketName: 'aws-s3-bucket-ad'
     sourceFolder: '$(Build.ArtifactStagingDirectory)'
     globExpressions: '**'
     filesAcl: 'bucket-owner-full-control'
